@@ -1,0 +1,82 @@
+<html>
+
+<head>
+  <script src="https://beta.hyperswitch.io/v1/HyperLoader.js"></script>
+  <link href="styles.css" rel="stylesheet" />
+</head>
+
+<body>
+  <div class="hypers-sdk hidden" id="hypers-sdk">
+    <form id="payment-form" onsubmit="handleSubmit(); return false;">
+      <div id="unified-checkout">
+        <!--HyperLoader injects the Unified Checkout-->
+      </div>
+      <button id="submit" class="checkoutButton payNow">
+        <div class="spinner hidden" id="spinner"></div>
+        <span id="button-text">Pay now</span>
+      </button>
+      <div id="payment-message" class="hidden"></div>
+    </form>
+  </div>
+
+
+  <div class="ConfirmContainer hidden" id="orderSuccess">
+    <div><img width="150px" height="110px"
+        src="https://demo-hyperswitch.netlify.app/static/media/Successsuccess.5789e33b69b916d8485c1e6de79d60fa.svg">
+    </div>
+    <div class="ConfirmText">Thanks for your order!</div>
+    <div class="ConfirmDes">Yayyy! You successfully made a payment with Hyperswitch. If its a real store, your items
+      would have been on their way.</div>
+    <div><a class="returnLink" href="#" onClick="retryPayment()">Try hyperswitch Demo again</a></div>
+  </div>
+
+  <div class="Container">
+    <div class="Cart">
+      <div class="orderSummary">Order summary (2)</div>
+      <div class="items">
+        <div class="Item">
+          <div class="ItemContainer">
+            <div class="itemImg"><img width="100" height="100"
+                src="https://cdn.pixabay.com/photo/2016/12/06/09/31/blank-1886008_1280.png">
+            </div>
+            <div class="itemDetails">
+              <div class="name">HS Tshirt</div>
+              <div class="props">Size: <span class="value">37 &nbsp;&nbsp;&nbsp;</span>Qty:<span class="value">1 </span>
+              </div>
+              <div class="props">Color: <span class="value">Black</span></div>
+            </div>
+          </div>
+          <div> 100.00</div>
+        </div>
+        <div class="Item">
+          <div class="ItemContainer">
+            <div class="itemImg"><img width="100" height="100"
+                src="https://cdn.pixabay.com/photo/2016/12/06/09/31/blank-1886008_1280.png">
+            </div>
+            <div class="itemDetails">
+              <div class="name">HS Cap</div>
+              <div class="props">Size: <span class="value">2 &nbsp;&nbsp;&nbsp;</span>Qty:<span class="value">1 </span>
+              </div>
+              <div class="props">Color: <span class="value">Black</span></div>
+            </div>
+          </div>
+          <div> 100.00</div>
+        </div>
+        <div class="ItemTotal">
+          <div class="total">Total Amount</div>
+          <div> 200.00</div>
+        </div>
+      </div>
+      <div class="checkoutSection">
+        <div class="description"><span> Hyperswitch is a high performance payment switch which can smartly route the
+            payment transaction to increase your revenue and reduce costs.</span><span class="subtext">Get started with
+            <a class="here" href="https://hyperswitch.io/docs/quickstart">hyperswitch</a></span></div>
+        <div onClick="showSDK()" class="buttonSection"><button class="CheckoutButton">Checkout with Hyperswitch</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+<script src="script.js"></script>
+
+</html>
