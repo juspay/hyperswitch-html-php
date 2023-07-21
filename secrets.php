@@ -3,4 +3,4 @@
 // or in a private script that does not publicly expose the source code.
 
 // This is your test secret API key.
-$hyperswitch_secret_key = 'YOUR_API_KEY';
+$hyperswitch_secret_key = 'HYPERSWITCH_API_KEY';
