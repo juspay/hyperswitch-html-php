@@ -14,4 +14,4 @@ build and run scripts you can use to start up the application.
 php -S 127.0.0.1:4242 --docroot=public
 ~~~
 
-3. The sample app is now accessible here : [http://localhost:4242/index.html](http://localhost:4242/index.html).
+3. The sample app will now be accessible here : [http://localhost:4242/index.html](http://localhost:4242/index.html).
