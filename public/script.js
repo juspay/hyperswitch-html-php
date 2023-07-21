@@ -1,7 +1,7 @@
 //Follow this doc for HTML and REST API integration: https://hyperswitch.io/docs/sdkIntegrations/unifiedCheckoutWeb/restAPIBackendAndHTMLFrontend
 // Update your publishable key here
 
-const hyper = Hyper("pk_snd_3b33cd9404234113804aa1accaabe22f");
+const hyper = Hyper("HYPERSWITCH_PUBLISHABLE_KEY");
 
 const items = [{ id: "xl-tshirt" }];
 
