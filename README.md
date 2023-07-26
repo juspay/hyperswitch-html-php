@@ -1,6 +1,6 @@
 # Hyperswitch HTML + PHP Integration
 
-Build a simple checkout web-app to collect payment details and make a dummy payment. Included are some basic build and run scripts you can use to run the demo application.
+Build a simple checkout web-app to collect payment details and make a test payment. Included are some basic build and run scripts you can use to run the demo application.
 
 ## Introduction
 
