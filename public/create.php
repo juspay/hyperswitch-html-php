@@ -27,7 +27,8 @@ try {
     
     $payload = json_encode(array(
         "amount" => calculateOrderAmount($jsonObj->items),
-        "currency" => "USD"
+        "currency" => "USD",
+        "customer_id" => "hyperswitch_customer"
     ));
 
     $ch = curl_init($HYPER_SWITCH_API_BASE_URL);
